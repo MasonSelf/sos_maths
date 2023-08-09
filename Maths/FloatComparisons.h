@@ -11,7 +11,7 @@
 #pragma once
 #include <juce_core/juce_core.h>
 
-template <T>
+template <typename T>
 static bool IsLessThanOrEqual(T lhs, T rhs)
 {
     if (juce::approximatelyEqual(lhs, rhs))
@@ -21,7 +21,7 @@ static bool IsLessThanOrEqual(T lhs, T rhs)
     return lhs < rhs;
 }
 
-template <T>
+template <typename T>
 static bool IsGreaterThanOrEqual(T lhs, T rhs)
 {
     if (juce::approximatelyEqual(lhs, rhs))
