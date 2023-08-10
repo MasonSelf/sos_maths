@@ -31,4 +31,10 @@ static bool IsGreaterThanOrEqual(T lhs, T rhs)
     return lhs > rhs;
 }
 
+template <typename T>
+static bool IsPositive(T v)
+{
+    return IsGreaterThanOrEqual(v, static_cast<T>(0.0));
+}
+
 
